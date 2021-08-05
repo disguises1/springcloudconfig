@@ -1,0 +1,10 @@
+# 应用名称
+spring.application.name=products
+# 应用服务 WEB 访问端口
+server.port=9998
+spring.cloud.consul.host=localhost
+spring.cloud.consul.port=8500
+#健康检查
+#spring.cloud.consul.discovery.register-health-check=false
+#引用上面的名字
+spring.cloud.consul.discovery.service-name=${spring.application.name}
